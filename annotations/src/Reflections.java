@@ -25,5 +25,7 @@ public class Reflections { // Uso de reflections para capturar informções de u
         for (Method m : g.getDeclaredMethods()) { // varrendo todos os metodos
             System.out.println(m.getName());
         }
+
+        System.out.println(g);
     }
 }

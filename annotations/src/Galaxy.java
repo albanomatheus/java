@@ -7,6 +7,7 @@ public class Galaxy {
     }
 
     public void ligar() {
+        System.out.println("GALAXY");
         this.ligado = true;
     }
 
@@ -20,5 +21,12 @@ public class Galaxy {
         } else {
             System.out.println("O Telefone não está ligado");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Galaxy{" +
+                "ligado=" + ligado +
+                '}';
     }
 }
