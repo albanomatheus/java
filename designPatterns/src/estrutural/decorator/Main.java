@@ -1,5 +1,6 @@
 package estrutural.decorator;
 
+// Padrão de projeto para adicionar funcionalidades a metodos ja criados
 public class Main {
     public static void main(String[] args) {
         Shape circle = new Circle();
@@ -9,6 +10,5 @@ public class Main {
         circle.draw();
         redCircle.draw();
         redRectangle.draw();
-
     }
 }

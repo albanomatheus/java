@@ -3,6 +3,7 @@ package estrutural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+// Classe que será o nó de uma arvóre genérica, contendo os empregados subordinados como filhos
 public class Empregado {
     private String nome;
     private String cargo;
