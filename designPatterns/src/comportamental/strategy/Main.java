@@ -1,5 +1,6 @@
 package comportamental.strategy;
 
+// Design Pattern usado para alterar o comportamento de um objeto em tempo de execução
 public class Main {
     public static void main(String[] args) {
         Contexto c = new Contexto(new Somar());

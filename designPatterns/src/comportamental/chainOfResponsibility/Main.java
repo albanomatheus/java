@@ -1,6 +1,8 @@
 package comportamental.chainOfResponsibility;
 
+// Design Patterns que implementa uma lista encadeada para encontrar o melhor elemento para executar uma função
 public class Main {
+    // Metodo para iniciar a lista
     private static Copo encadearCopos() {
         Copo p = new Pequeno();
         Copo m = new Medio();

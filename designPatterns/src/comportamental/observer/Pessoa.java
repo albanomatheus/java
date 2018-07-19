@@ -10,6 +10,7 @@ public class Pessoa {
         this.a.addObs(this);
     }
 
+    // Metodo chamado por Alarme quanto for necessario
     public void alertar() {
         System.out.println("DISPERTANDO PARA O " + this.nome);
     }

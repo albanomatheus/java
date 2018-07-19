@@ -1,5 +1,7 @@
 package comportamental.interpreter;
 
+// Classe que utiliza ExpressaoFinal para implementar o "E LOGICO"
+// Se as duas expressoes passadas no contrutor forem verdades, interpretador() retornara true
 public class EExpressao implements Expressao {
     private Expressao expr1;
     private Expressao expr2;

@@ -1,5 +1,6 @@
 package comportamental.command;
 
+// Design usado para que um objeto execute uma sequencia de metodos de outros objetos que cumprem um contrato
 public class Main {
     public static void main(String[] args) {
         Stock abcStock = new Stock();

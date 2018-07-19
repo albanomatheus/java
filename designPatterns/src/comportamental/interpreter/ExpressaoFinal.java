@@ -1,5 +1,6 @@
 package comportamental.interpreter;
 
+// Classe que armazena a regra de negocio que define verdadeiro ou falso
 public class ExpressaoFinal implements Expressao {
     private String data;
 

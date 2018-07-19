@@ -1,5 +1,6 @@
 package comportamental.interpreter;
 
+// Design Pattern usado para validar informalçoes (true ou false)
 public class Main {
     public static OuExpressao saoHomens() {
         Expressao joao = new ExpressaoFinal("Joao");

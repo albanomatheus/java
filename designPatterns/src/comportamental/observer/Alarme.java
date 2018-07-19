@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+// Classe que possue uma lista de objetos a serem notificados,
+// Um metodo que possue a regra para quando notificar e chama outro metodo para cada objeto a ser notificado
 public class Alarme {
     private List<Pessoa> obs = new ArrayList<>();
     private Date horaDispertar;
@@ -35,18 +37,5 @@ public class Alarme {
                 ob.alertar();
             }
         }
-    }
-
-    public static void main(String[] args) throws ParseException {
-        Alarme a = new Alarme("14:37:20");
-
-        new Pessoa("Joao", a);
-        new Pessoa("Ana", a);
-        new Pessoa("Maria", a);
-
-        while (true) {
-            a.dispertar();
-        }
-
     }
 }
