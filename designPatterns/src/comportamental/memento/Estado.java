@@ -18,7 +18,7 @@ public class Estado {
     }
 
     // Atualiza a classe (this) com os dados de armazenador
-    public void getEstadoMemento(Armazenador armazenador) {
+    public void updateEstadoMemento(Armazenador armazenador) {
         estado = armazenador.getEstato();
     }
 }

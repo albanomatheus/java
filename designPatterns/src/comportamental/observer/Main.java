@@ -5,7 +5,7 @@ import java.text.ParseException;
 // Design Pattern usado apra executar tarefa em cada objeto presente em uma lista, caso algo aconteça
 public class Main {
     public static void main(String[] args) throws ParseException {
-        Alarme a = new Alarme("14:55:35");
+        Alarme a = new Alarme("09:56:00");
 
         new Pessoa("Joao", a);
         new Pessoa("Ana", a);

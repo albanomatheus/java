@@ -14,10 +14,10 @@ public class Main {
         r.add(e.salvarMomento());
         System.out.println("Estado atual: " + e.getEstado());
 
-        e.getEstadoMemento(r.get(0));
+        e.updateEstadoMemento(r.get(0));
         System.out.println("Primeiro estado: " + e.getEstado());
 
-        e.getEstadoMemento(r.get(1));
+        e.updateEstadoMemento(r.get(1));
         System.out.println("Segundo estado: " + e.getEstado());
     }
 }
