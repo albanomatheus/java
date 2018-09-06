@@ -3,9 +3,8 @@ package servlet;
 import dao.ContatoDAO;
 import domain.Contato;
 
-import javax.servlet.ServletConfig;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -43,11 +42,8 @@ public class AdicionaContatoServlet extends HttpServlet {
         ContatoDAO dao = new ContatoDAO();
         dao.add(contato);
 
-        response.getWriter().println("<html>");
-        response.getWriter().println("<body>");
-        response.getWriter().println("Contato " + contato.getNome() + " adicionado com sucesso");
-        response.getWriter().println("</body>");
-        response.getWriter().println("</html>");
+        RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
+        rd.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

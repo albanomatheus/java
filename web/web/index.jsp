@@ -23,9 +23,5 @@
     Testando parametros: <input type="text" name="parametro">
     <input type="submit">
 </form>
-
-
-
-<% System.out.println("Tudo foi executado");%>
 </body>
 </html>
